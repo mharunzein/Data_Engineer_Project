@@ -1,0 +1,11 @@
+[2022-12-27T02:30:43.386+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: final_project_dag.extract_test manual__2022-12-27T02:11:19.752719+00:00 [queued]>
+[2022-12-27T02:30:44.207+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: final_project_dag.extract_test manual__2022-12-27T02:11:19.752719+00:00 [queued]>
+[2022-12-27T02:30:44.237+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-27T02:30:44.247+0000] {taskinstance.py:1284} INFO - Starting attempt 2 of 6
+[2022-12-27T02:30:44.255+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-27T02:30:45.320+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): extract_test> on 2022-12-27 02:11:19.752719+00:00
+[2022-12-27T02:30:45.786+0000] {standard_task_runner.py:55} INFO - Started process 162 to run task
+[2022-12-27T02:30:46.154+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'final_project_dag', 'extract_test', 'manual__2022-12-27T02:11:19.752719+00:00', '--job-id', '204', '--raw', '--subdir', 'DAGS_FOLDER/final_project_dag.py', '--cfg-path', '/tmp/tmp9yg4trry']
+[2022-12-27T02:30:46.270+0000] {standard_task_runner.py:83} INFO - Job 204: Subtask extract_test

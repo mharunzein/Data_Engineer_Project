@@ -1,0 +1,12 @@
+[2022-12-27T03:08:08.819+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: final_project_dag.print_date manual__2022-12-27T02:58:19.560216+00:00 [queued]>
+[2022-12-27T03:08:11.672+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: final_project_dag.print_date manual__2022-12-27T02:58:19.560216+00:00 [queued]>
+[2022-12-27T03:08:11.698+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-27T03:08:11.709+0000] {taskinstance.py:1284} INFO - Starting attempt 2 of 6
+[2022-12-27T03:08:11.731+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-27T03:08:15.081+0000] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): print_date> on 2022-12-27 02:58:19.560216+00:00
+[2022-12-27T03:08:17.251+0000] {standard_task_runner.py:55} INFO - Started process 113 to run task
+[2022-12-27T03:08:18.326+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'final_project_dag', 'print_date', 'manual__2022-12-27T02:58:19.560216+00:00', '--job-id', '286', '--raw', '--subdir', 'DAGS_FOLDER/final_project_dag.py', '--cfg-path', '/tmp/tmph9gkbdnm']
+[2022-12-27T03:08:18.926+0000] {standard_task_runner.py:83} INFO - Job 286: Subtask print_date
+[2022-12-27T03:10:56.720+0000] {task_command.py:389} INFO - Running <TaskInstance: final_project_dag.print_date manual__2022-12-27T02:58:19.560216+00:00 [running]> on host 7ef23135e71b

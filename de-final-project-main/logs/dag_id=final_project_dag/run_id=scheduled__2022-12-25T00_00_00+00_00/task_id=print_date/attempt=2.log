@@ -1,0 +1,13 @@
+[2022-12-26T20:16:58.348+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: final_project_dag.print_date scheduled__2022-12-25T00:00:00+00:00 [queued]>
+[2022-12-26T20:17:03.250+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: final_project_dag.print_date scheduled__2022-12-25T00:00:00+00:00 [queued]>
+[2022-12-26T20:17:03.258+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-26T20:17:03.261+0000] {taskinstance.py:1284} INFO - Starting attempt 2 of 6
+[2022-12-26T20:17:03.266+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-26T20:17:05.553+0000] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): print_date> on 2022-12-25 00:00:00+00:00
+[2022-12-26T20:17:05.773+0000] {standard_task_runner.py:55} INFO - Started process 142 to run task
+[2022-12-26T20:17:06.444+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'final_project_dag', 'print_date', 'scheduled__2022-12-25T00:00:00+00:00', '--job-id', '58', '--raw', '--subdir', 'DAGS_FOLDER/final_project_dag.py', '--cfg-path', '/tmp/tmpqdu4l2bd']
+[2022-12-26T20:17:06.836+0000] {standard_task_runner.py:83} INFO - Job 58: Subtask print_date
+[2022-12-26T20:17:34.249+0000] {local_task_job.py:159} INFO - Task exited with return code Negsignal.SIGKILL
+[2022-12-26T20:18:55.208+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

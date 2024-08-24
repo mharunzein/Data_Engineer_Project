@@ -1,0 +1,155 @@
+[2022-12-27T03:44:52.924+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: final_project_dag.extract_test manual__2022-12-27T03:44:36.687637+00:00 [queued]>
+[2022-12-27T03:44:53.002+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: final_project_dag.extract_test manual__2022-12-27T03:44:36.687637+00:00 [queued]>
+[2022-12-27T03:44:53.005+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-27T03:44:53.009+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 6
+[2022-12-27T03:44:53.072+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-27T03:44:53.168+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): extract_test> on 2022-12-27 03:44:36.687637+00:00
+[2022-12-27T03:44:53.190+0000] {standard_task_runner.py:55} INFO - Started process 138 to run task
+[2022-12-27T03:44:53.199+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'final_project_dag', 'extract_test', 'manual__2022-12-27T03:44:36.687637+00:00', '--job-id', '312', '--raw', '--subdir', 'DAGS_FOLDER/final_project_dag.py', '--cfg-path', '/tmp/tmp_3mj4wnu']
+[2022-12-27T03:44:53.205+0000] {standard_task_runner.py:83} INFO - Job 312: Subtask extract_test
+[2022-12-27T03:44:55.740+0000] {task_command.py:389} INFO - Running <TaskInstance: final_project_dag.extract_test manual__2022-12-27T03:44:36.687637+00:00 [running]> on host b40088984618
+[2022-12-27T03:44:56.453+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=kelompok 3
+AIRFLOW_CTX_DAG_ID=final_project_dag
+AIRFLOW_CTX_TASK_ID=extract_test
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-27T03:44:36.687637+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-27T03:44:36.687637+00:00
+[2022-12-27T03:44:56.467+0000] {conn.py:372} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: connecting to broker:9092 [('172.25.0.4', 9092) IPv4]
+[2022-12-27T03:44:56.471+0000] {conn.py:1049} INFO - Probing node bootstrap-0 broker version
+[2022-12-27T03:44:56.475+0000] {conn.py:401} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: Connection complete.
+[2022-12-27T03:44:56.598+0000] {conn.py:1106} INFO - Broker version identifed as 1.0.0
+[2022-12-27T03:44:56.600+0000] {conn.py:1108} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2022-12-27T03:44:56.610+0000] {subscription_state.py:171} INFO - Updating subscribed topics to: ('projek_akhir',)
+[2022-12-27T03:44:57.554+0000] {logging_mixin.py:137} INFO - Connected
+[2022-12-27T03:44:57.557+0000] {streaming.py:185} INFO - Stream connected
+[2022-12-27T03:45:03.101+0000] {logging_mixin.py:137} INFO - b'{"text": "Alice in borderland S2 makes me so anxious but I can\\u2019t stop watching it"}'
+[2022-12-27T03:45:03.145+0000] {conn.py:372} INFO - <BrokerConnection node_id=1003 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: connecting to broker:9092 [('172.25.0.4', 9092) IPv4]
+[2022-12-27T03:45:03.150+0000] {logging_mixin.py:137} INFO - b'{"text": "finished alice in borderland s2 i still love chishiya and the alice in wonderland references never miss"}'
+[2022-12-27T03:45:03.155+0000] {conn.py:401} INFO - <BrokerConnection node_id=1003 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: Connection complete.
+[2022-12-27T03:45:03.165+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @zphier_: Alice in borderland s2 ep1 ending without context https://t.co/EthS1bLzFh"}'
+[2022-12-27T03:45:03.176+0000] {conn.py:811} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connected> [IPv4 ('172.25.0.4', 9092)]>: Closing connection. 
+[2022-12-27T03:45:08.110+0000] {logging_mixin.py:137} INFO - b'{"text": "\\ud83d\\udc49Ditunggu kabarnya dari @KPK_RI dan @KejaksaanRI \\n\\ud83d\\udc49Jika ada cukup bukti, Bupati Cianjur bisa meriang....\\ud83d\\ude13\\ud83d\\ude13\\n\\nBupati Cianjur Dilaporkan ke KPK, Diduga Selewengkan Dana Bantuan Gempa\\nKlik untuk baca: https://t.co/6LexBe50yr"}'
+[2022-12-27T03:45:28.412+0000] {logging_mixin.py:137} INFO - b'{"text": "@KompasTV udah bener kita bantu doa aja"}'
+[2022-12-27T03:45:29.127+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @thurilluwalk: Obsessed with Alice in Borderland 2 atm  and just wanna remind everyone that we got a Mina and Miyoshi Ayaka (Ann) intera\\u2026"}'
+[2022-12-27T03:45:30.069+0000] {logging_mixin.py:137} INFO - b'{"text": "she\\u2019s so fckin hot https://t.co/RgqkXLTigX"}'
+[2022-12-27T03:45:32.048+0000] {logging_mixin.py:137} INFO - b'{"text": "Alice in borderland season \\u2705\\ufe0f\\nThe bloodbath in this season \\ud83e\\udd2f"}'
+[2022-12-27T03:45:36.091+0000] {logging_mixin.py:137} INFO - b'{"text": "Staring Alice in Borderland, heard so much about it on here and from irls, it\\u2019s time."}'
+[2022-12-27T03:45:36.126+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @SEUNGlNNIE: Ayaka Miyoshi who plays Ann in alice in borderland (who is also a stay) https://t.co/8oan7ZfT2j"}'
+[2022-12-27T03:45:45.059+0000] {logging_mixin.py:137} INFO - b'{"text": "alice in borderland met une vitesse a squid game https://t.co/lYSXkbfZDL"}'
+[2022-12-27T03:45:46.101+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @Muhammad_Saewad: Bupati Cianjur Herman Suherman Dilaporkan ke KPK, Dugaan Penyelewengan Bantuan Korban Gempa. https://t.co/XpPVVnG4I8"}'
+[2022-12-27T03:45:47.118+0000] {logging_mixin.py:137} INFO - b'{"text": "@cuntyreveluv i can see it??\\u00a3{&gt;{ but the second girl is yunjin instead"}'
+[2022-12-27T03:45:55.116+0000] {logging_mixin.py:137} INFO - b'{"text": "GOD DAMN MOMMY https://t.co/wzPI5zHJQg"}'
+[2022-12-27T03:45:58.096+0000] {logging_mixin.py:137} INFO - b'{"text": "wheres the lie? https://t.co/ONWUtb41qA"}'
+[2022-12-27T03:45:59.084+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @thurilluwalk: Obsessed with Alice in Borderland 2 atm  and just wanna remind everyone that we got a Mina and Miyoshi Ayaka (Ann) intera\\u2026"}'
+[2022-12-27T03:46:03.457+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @atermoiemxntss: the women of alice in borderland\\nhttps://t.co/HWw7kV0FS4"}'
+[2022-12-27T03:46:13.054+0000] {logging_mixin.py:137} INFO - b'{"text": "My luv https://t.co/26o2DWPmqD"}'
+[2022-12-27T03:46:13.090+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @dohyunfox: well hello chishiya from alice in borderland https://t.co/niJl0MW5uM"}'
+[2022-12-27T03:46:14.048+0000] {logging_mixin.py:137} INFO - b'{"text": "the ending of alice in borderland,,, makes my head hurt i cried"}'
+[2022-12-27T03:46:15.204+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @atermoiemxntss: OMG ARISU FROM ALICE IN BORDERLAND?!?! https://t.co/VZZxR5YpOp"}'
+[2022-12-27T03:46:16.097+0000] {logging_mixin.py:137} INFO - b'{"text": "41. My roommate is a gumiho \\n\\n\\u2022 22.12\\n\\u2022 5/5 \\u2605 https://t.co/vGpSfjanuk"}'
+[2022-12-27T03:46:16.178+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @yukikun216: your name     alice in borderland s2 https://t.co/v2m05upQSv"}'
+[2022-12-27T03:46:20.116+0000] {logging_mixin.py:137} INFO - b'{"text": "now what is that on her\\u2026. https://t.co/Y0uDLcUjzl"}'
+[2022-12-27T03:46:23.121+0000] {logging_mixin.py:137} INFO - b'{"text": "@ohmforyou_ Where to watch season 1 of alice in borderland?? For free"}'
+[2022-12-27T03:46:27.055+0000] {logging_mixin.py:137} INFO - b'{"text": "And this whole time I\\u2019ve been trying to figure out who Alice was\\ud83e\\udd2f https://t.co/d5186FUbpd"}'
+[2022-12-27T03:46:29.084+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @ungyeonsu: chihiro yamamoto as the queen of spades and riisa naka as the queen of hearts in alice in borderland 2 (2022) \\n https://t.co\\u2026"}'
+[2022-12-27T03:46:31.084+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @jeongyeonnation: seriously that season of alice in borderland was well worth the wait\\u2026 like that shit was so good"}'
+[2022-12-27T03:46:39.084+0000] {logging_mixin.py:137} INFO - b'{"text": "I just finished the last episode of Alice in borderland, and all I have to say is, what the actual fuck"}'
+[2022-12-27T03:46:43.110+0000] {logging_mixin.py:137} INFO - b'{"text": "Bupati Cianjur Dilaporkan ke KPK, Diduga Selewengkan Bantuan Gempa https://t.co/IpGT67lMdE"}'
+[2022-12-27T03:46:46.093+0000] {logging_mixin.py:137} INFO - b'{"text": "since i watched all the eps from gap imma return and watch alice in borderland but i need snacks ugh"}'
+[2022-12-27T03:46:58.054+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @HausofHilton: Alice in borderland season 2 is so boring."}'
+[2022-12-27T03:46:58.079+0000] {logging_mixin.py:137} INFO - b'{"text": "What I watched in 2022\\nHsmtmts\\nReal housewives of Dubai\\nlove island 8\\nall of us are dead \\nGreen mothers club \\nlittle women \\nDerry girls 3 \\ntomorrow \\nAlice in borderland 2"}'
+[2022-12-27T03:46:58.136+0000] {logging_mixin.py:137} INFO - b'{"text": "@madfrieza About to give it a play."}'
+[2022-12-27T03:47:04.111+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @atermoiemxntss: the women of alice in borderland\\nhttps://t.co/HWw7kV0FS4"}'
+[2022-12-27T03:47:09.065+0000] {logging_mixin.py:137} INFO - b'{"text": "Alice in borderland is better than squid game. There, I said it."}'
+[2022-12-27T03:47:13.123+0000] {logging_mixin.py:137} INFO - b'{"text": "tatta: im a joke to u? https://t.co/kKgXyHLUAT"}'
+[2022-12-27T03:47:14.063+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @atermoiemxntss: the women of alice in borderland\\nhttps://t.co/HWw7kV0FS4"}'
+[2022-12-27T03:47:19.103+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @dasucchi: @NetflixFR The women of Alice in Borderland!\\nhttps://t.co/hFbiJ7Ba1o"}'
+[2022-12-27T03:47:21.147+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @KataLogika86: Memalukan, Bupati Cianjur Jual Bantuan Gempa Asal UEA \\nhttps://t.co/ibYNe0JKt8"}'
+[2022-12-27T03:47:21.222+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @atermoiemxntss: OMG ARISU FROM ALICE IN BORDERLAND?!?! https://t.co/VZZxR5YpOp"}'
+[2022-12-27T03:47:26.048+0000] {logging_mixin.py:137} INFO - b'{"text": "@kompascom komuknya alim weh. wkwk."}'
+[2022-12-27T03:47:28.037+0000] {logging_mixin.py:137} INFO - b'{"text": "@CNNIndonesia Astaghfirullah!"}'
+[2022-12-27T03:47:29.016+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @SEUNGlNNIE: Ayaka Miyoshi who plays Ann in alice in borderland (who is also a stay) https://t.co/8oan7ZfT2j"}'
+[2022-12-27T03:47:29.044+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @moviemenfes: Miss Double Faced Teacher (2012)\\nMare (2015) \\nOrange (2015) \\nAlice in Borderland (2020) mvs https://t.co/nEWZtcp0Ih"}'
+[2022-12-27T03:47:33.159+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @yukikun216: when you\'ve finished binge watching all episodes of Alice in Borderland season 2 yesterday and you don\'t know what to do wi\\u2026"}'
+[2022-12-27T03:47:34.050+0000] {logging_mixin.py:137} INFO - b'{"text": "QUE FINAL FOI ESSE DE ALICE IN BORDERLAND \\n\\nTHIS FINAL IS A 100% MIND-BLOWING"}'
+[2022-12-27T03:47:34.100+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @hachitski: \\u2013 the women of alice in borderland s2 https://t.co/qFntuAMlgI"}'
+[2022-12-27T03:47:36.076+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @thurilluwalk: Obsessed with Alice in Borderland 2 atm  and just wanna remind everyone that we got a Mina and Miyoshi Ayaka (Ann) intera\\u2026"}'
+[2022-12-27T03:47:36.156+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @tempodotco: Bupati Cianjur Dilaporkan ke KPK karena Diduga Jual Bantuan Logistik Gempa https://t.co/awkf53AIwa #TempoVideo"}'
+[2022-12-27T03:47:37.044+0000] {logging_mixin.py:137} INFO - b'{"text": "@kompascom https://t.co/UGVeLDEdPL.."}'
+[2022-12-27T03:47:42.038+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @neet21_: not Alice in Borderland\'s mangaka randomly running into frame for a split second and yelling \\u201cwhat the hell\\u201d https://t.co/W8OX\\u2026"}'
+[2022-12-27T03:47:44.033+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @SEUNGlNNIE: Ayaka Miyoshi who plays Ann in alice in borderland (who is also a stay) https://t.co/8oan7ZfT2j"}'
+[2022-12-27T03:47:45.066+0000] {logging_mixin.py:137} INFO - b'{"text": "@kompascom Ditangkap ramai-ramai aaja oleh warga lalu dikubur hidup-hidup"}'
+[2022-12-27T03:47:46.082+0000] {logging_mixin.py:137} INFO - b'{"text": "Alice in Borderland on @netflix \\ud83e\\udd2a\\ud83d\\ude1d"}'
+[2022-12-27T03:47:50.276+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @moviemenfes: Miss Double Faced Teacher (2012)\\nMare (2015) \\nOrange (2015) \\nAlice in Borderland (2020) mvs https://t.co/nEWZtcp0Ih"}'
+[2022-12-27T03:47:54.078+0000] {logging_mixin.py:137} INFO - b'{"text": "@f4irymy0ui I\\u2019m satisfied w the ending too but I\\u2019m gonna miss the characters so much \\ud83d\\ude2d"}'
+[2022-12-27T03:48:02.101+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @Gabiirodss: ladies and gentlemen... chishiya, the legend of alice in borderland is back https://t.co/woStrycErM"}'
+[2022-12-27T03:48:05.094+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @yukikun216: Them playing the Diamond \\u2666\\ufe0f card suit games in Alice in Borderland: https://t.co/M0bEHFSJBF"}'
+[2022-12-27T03:48:06.141+0000] {logging_mixin.py:137} INFO - b'{"text": "I finished watching Alice in Borderland s2 2 days ago and I\\u2019ll start to watch Emily in Paris this weekend since I\\u2019m busy sleeping then going to work from midnight to morning \\ud83d\\ude03"}'
+[2022-12-27T03:48:09.095+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @SEUNGlNNIE: Ayaka Miyoshi who plays Ann in alice in borderland (who is also a stay) https://t.co/8oan7ZfT2j"}'
+[2022-12-27T03:48:12.115+0000] {logging_mixin.py:137} INFO - b'{"text": "What the actual heck at the end of the last episode of alice in borderland"}'
+[2022-12-27T03:48:17.041+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @st6rky: - banda from alice in borderland season 2 https://t.co/FQfd6fyNXZ"}'
+[2022-12-27T03:48:26.110+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @SEUNGlNNIE: Ayaka Miyoshi who plays Ann in alice in borderland (who is also a stay) https://t.co/8oan7ZfT2j"}'
+[2022-12-27T03:48:29.092+0000] {logging_mixin.py:137} INFO - b'{"text": "@KrishWangsa3 Walaupun jelas2 Anjing,tapi janganlah Seanjing itu. https://t.co/gqzgK7zKCj"}'
+[2022-12-27T03:48:30.058+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @SEUNGlNNIE: Ayaka Miyoshi who plays Ann in alice in borderland (who is also a stay) https://t.co/8oan7ZfT2j"}'
+[2022-12-27T03:48:32.090+0000] {logging_mixin.py:137} INFO - b'{"text": "fuck omg i was binge watching alice in borderland and its so depressing im gonna cry"}'
+[2022-12-27T03:48:33.021+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @mountnesia: Kondisi jalur pendakian dari arah Gunung Putri terdapat retakan tanah di Geger Bibir Kawah Gunung Gede 7 meter.\\n\\nRetakan in\\u2026"}'
+[2022-12-27T03:48:35.154+0000] {logging_mixin.py:137} INFO - b'{"text": "@tannies_stigma YEAH. YEAH."}'
+[2022-12-27T03:48:38.074+0000] {logging_mixin.py:137} INFO - b'{"text": "Alice in borderland season 2 \\u2705\\ufe0f\\nThe bloodbath in this season \\ud83e\\udd2f"}'
+[2022-12-27T03:48:45.220+0000] {logging_mixin.py:137} INFO - b'{"text": "@WatchmenID ga rame"}'
+[2022-12-27T03:48:48.027+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @thurilluwalk: Obsessed with Alice in Borderland 2 atm  and just wanna remind everyone that we got a Mina and Miyoshi Ayaka (Ann) intera\\u2026"}'
+[2022-12-27T03:48:52.039+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @moviemenfes: Miss Double Faced Teacher (2012)\\nMare (2015) \\nOrange (2015) \\nAlice in Borderland (2020) mvs https://t.co/nEWZtcp0Ih"}'
+[2022-12-27T03:49:00.052+0000] {logging_mixin.py:137} INFO - b'{"text": "@Chruumii good."}'
+[2022-12-27T03:49:05.050+0000] {logging_mixin.py:137} INFO - b'{"text": "@lovcymn unrelated IT WONT LET ME ADD U TO THE GROUPCHAT I MADE"}'
+[2022-12-27T03:49:05.117+0000] {logging_mixin.py:137} INFO - b'{"text": "alice in borderland 2 is out n nobody said a word.. ya rlly leave me no choice but navigate this world alone hm"}'
+[2022-12-27T03:49:05.138+0000] {logging_mixin.py:137} INFO - b'{"text": "@tannies_stigma NO CUZ THE WAY I WAS INVESTED THE WHOLE TIME LIKE TOO MUCH WAS GOING ON"}'
+[2022-12-27T03:49:07.058+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @SEUNGlNNIE: Ayaka Miyoshi who plays Ann in alice in borderland (who is also a stay) https://t.co/8oan7ZfT2j"}'
+[2022-12-27T03:49:10.014+0000] {logging_mixin.py:137} INFO - b'{"text": "FITB ITB Berharap Bisa Berkontribusi dalam Penanganan Gempa Cianjur https://t.co/hfyBXM3fNU"}'
+[2022-12-27T03:49:16.111+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @aibarisu: jack of hearts best alice in borderland 2 episode, idc https://t.co/7xT1bAJGku"}'
+[2022-12-27T03:49:22.236+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @SEUNGlNNIE: Ayaka Miyoshi who plays Ann in alice in borderland (who is also a stay) https://t.co/8oan7ZfT2j"}'
+[2022-12-27T03:49:24.054+0000] {logging_mixin.py:137} INFO - b'{"text": "Alice In borderland is wild. Squid games but with larger scale"}'
+[2022-12-27T03:49:27.108+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @kompascom: Bupati Cianjur Dilaporkan ke KPK, Diduga Selewengkan Dana Bantuan Gempa\\n\\nBaca selengkapnya di sini: https://t.co/NBDvtn5Eb9\\u2026"}'
+[2022-12-27T03:49:28.208+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @namiyor: alice in borderland season 2 chishiya https://t.co/eVY0CFGYiY"}'
+[2022-12-27T03:49:30.201+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @thurilluwalk: Obsessed with Alice in Borderland 2 atm  and just wanna remind everyone that we got a Mina and Miyoshi Ayaka (Ann) intera\\u2026"}'
+[2022-12-27T03:49:36.027+0000] {logging_mixin.py:137} INFO - b'{"text": "@hoseokworldss that show broke me"}'
+[2022-12-27T03:49:41.079+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @RinjaniJB: Bupati Cianjur, diduga selewengkan bantuan gempa Cianjur. \\n\\nEntah apa yg merasuki jiwanya, hingga dia tega melukai hati warg\\u2026"}'
+[2022-12-27T03:49:42.115+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @moviemenfes: Miss Double Faced Teacher (2012)\\nMare (2015) \\nOrange (2015) \\nAlice in Borderland (2020) mvs https://t.co/nEWZtcp0Ih"}'
+[2022-12-27T03:49:43.077+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @moonstarbiee: cardigan lucu\\n\\nt. reborn rich song joong ki alchemy of soul 2 ep 6 siang molen cuti let go dispatch fajar mixue home alon\\u2026"}'
+[2022-12-27T03:49:43.143+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @EIJICHERRY: one thing i am sure about is that i would not survive a single alice in borderland game. they\'d explain the rules to me and\\u2026"}'
+[2022-12-27T03:49:45.121+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @SEUNGlNNIE: Ayaka Miyoshi who plays Ann in alice in borderland (who is also a stay) https://t.co/8oan7ZfT2j"}'
+[2022-12-27T03:49:50.283+0000] {logging_mixin.py:137} INFO - b'{"text": "MOMO AND RYUJIN DID SO WELL \\ud83d\\ude0d\\ud83d\\ude0d\\ud83d\\ude0d https://t.co/eTsClaPzf2"}'
+[2022-12-27T03:49:53.057+0000] {logging_mixin.py:137} INFO - b'{"text": "Pakar ITB : Bangun Kolaborasi, Maksimalkan Potensi Bantuan untuk Penanganan Pasca Gempa Cianjur https://t.co/Tzv4GHxE7e"}'
+[2022-12-27T03:49:55.051+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @yukikun216: Alice in Borderland Season 2 Casts. \\u2666\\ufe0f\\u2660\\ufe0f\\u2665\\ufe0f\\u2663\\ufe0f https://t.co/xNF1icHf3w"}'
+[2022-12-27T03:50:05.363+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @thurilluwalk: Obsessed with Alice in Borderland 2 atm  and just wanna remind everyone that we got a Mina and Miyoshi Ayaka (Ann) intera\\u2026"}'
+[2022-12-27T03:50:09.091+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @cesntella: Rekomendasi outfit ala korea under 100k\\u2728\\n1:https://t.co/44T4oW1iZI\\n2:https://t.co/YEtqLReIOm\\n3:https://t.co/oHiWuAxXDC\\n4:htt\\u2026"}'
+[2022-12-27T03:50:15.211+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @ubglowing: alice in borderland characters as youtubers https://t.co/ronaDe4Gp0"}'
+[2022-12-27T03:50:19.099+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @moviemenfes: Miss Double Faced Teacher (2012)\\nMare (2015) \\nOrange (2015) \\nAlice in Borderland (2020) mvs https://t.co/nEWZtcp0Ih"}'
+[2022-12-27T03:50:20.097+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @SEUNGlNNIE: Ayaka Miyoshi who plays Ann in alice in borderland (who is also a stay) https://t.co/8oan7ZfT2j"}'
+[2022-12-27T03:50:24.101+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @MichaelNababani: Dari sejak awal sdh saya duga, skrg terkuak, bupati ini menjual ke pasar bantuan dari Emirates Red Crescent yang sehar\\u2026"}'
+[2022-12-27T03:50:24.130+0000] {streaming.py:180} ERROR - Stream connection closed by Twitter
+[2022-12-27T03:50:24.179+0000] {logging_mixin.py:137} INFO - Disconnected
+[2022-12-27T03:50:24.185+0000] {streaming.py:193} INFO - Stream disconnected
+[2022-12-27T03:50:24.198+0000] {conn.py:372} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: connecting to broker:9092 [('172.25.0.4', 9092) IPv4]
+[2022-12-27T03:50:24.311+0000] {conn.py:401} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: Connection complete.
+[2022-12-27T03:50:24.436+0000] {conn.py:372} INFO - <BrokerConnection node_id=1003 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: connecting to broker:9092 [('172.25.0.4', 9092) IPv4]
+[2022-12-27T03:50:24.552+0000] {conn.py:401} INFO - <BrokerConnection node_id=1003 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: Connection complete.
+[2022-12-27T03:50:24.629+0000] {conn.py:811} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connected> [IPv4 ('172.25.0.4', 9092)]>: Closing connection. 
+[2022-12-27T03:50:24.824+0000] {cluster.py:376} INFO - Group coordinator for consumers is (1003, 'broker', 9092, None)
+[2022-12-27T03:50:24.832+0000] {base.py:688} INFO - Discovered coordinator 1003 for group consumers
+[2022-12-27T03:50:24.839+0000] {base.py:735} INFO - Starting new heartbeat thread
+[2022-12-27T03:50:24.856+0000] {consumer.py:342} INFO - Revoking previously assigned partitions () for group consumers
+[2022-12-27T03:50:24.860+0000] {base.py:447} INFO - (Re-)joining group consumers
+[2022-12-27T03:50:24.951+0000] {base.py:516} INFO - Elected group leader -- performing partition assignments using range
+[2022-12-27T03:50:25.036+0000] {base.py:333} INFO - Successfully joined group consumers with generation 3
+[2022-12-27T03:50:25.039+0000] {subscription_state.py:257} INFO - Updated partition assignment: [('projek_akhir', 0)]
+[2022-12-27T03:50:25.042+0000] {consumer.py:239} INFO - Setting newly assigned partitions (('projek_akhir', 0),) for group consumers
+[2022-12-27T03:50:25.629+0000] {logging_mixin.py:137} INFO - <bound method NDFrame.head of Empty DataFrame
+Columns: [tweet_id, text, user_id, created_at, source]
+Index: []>
+[2022-12-27T03:50:25.636+0000] {base.py:742} INFO - Stopping heartbeat thread
+[2022-12-27T03:50:25.645+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-27T03:50:25.811+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=final_project_dag, task_id=extract_test, execution_date=20221227T034436, start_date=20221227T034452, end_date=20221227T035025
+[2022-12-27T03:50:27.254+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-27T03:50:27.391+0000] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check

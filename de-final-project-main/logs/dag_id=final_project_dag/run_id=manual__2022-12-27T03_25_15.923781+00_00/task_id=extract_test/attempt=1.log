@@ -1,0 +1,55 @@
+[2022-12-27T03:25:37.890+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: final_project_dag.extract_test manual__2022-12-27T03:25:15.923781+00:00 [queued]>
+[2022-12-27T03:25:37.995+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: final_project_dag.extract_test manual__2022-12-27T03:25:15.923781+00:00 [queued]>
+[2022-12-27T03:25:37.997+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-27T03:25:38.000+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 6
+[2022-12-27T03:25:38.002+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-27T03:25:38.193+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): extract_test> on 2022-12-27 03:25:15.923781+00:00
+[2022-12-27T03:25:38.262+0000] {standard_task_runner.py:55} INFO - Started process 571 to run task
+[2022-12-27T03:25:38.347+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'final_project_dag', 'extract_test', 'manual__2022-12-27T03:25:15.923781+00:00', '--job-id', '301', '--raw', '--subdir', 'DAGS_FOLDER/final_project_dag.py', '--cfg-path', '/tmp/tmpg9m7il3s']
+[2022-12-27T03:25:38.388+0000] {standard_task_runner.py:83} INFO - Job 301: Subtask extract_test
+[2022-12-27T03:25:43.623+0000] {task_command.py:389} INFO - Running <TaskInstance: final_project_dag.extract_test manual__2022-12-27T03:25:15.923781+00:00 [running]> on host b40088984618
+[2022-12-27T03:25:44.875+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=kelompok 3
+AIRFLOW_CTX_DAG_ID=final_project_dag
+AIRFLOW_CTX_TASK_ID=extract_test
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-27T03:25:15.923781+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-27T03:25:15.923781+00:00
+[2022-12-27T03:25:45.177+0000] {conn.py:372} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: connecting to broker:9092 [('172.25.0.4', 9092) IPv4]
+[2022-12-27T03:25:45.187+0000] {conn.py:1049} INFO - Probing node bootstrap-0 broker version
+[2022-12-27T03:25:45.196+0000] {conn.py:401} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: Connection complete.
+[2022-12-27T03:25:45.397+0000] {conn.py:1106} INFO - Broker version identifed as 1.0.0
+[2022-12-27T03:25:45.401+0000] {conn.py:1108} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2022-12-27T03:25:45.460+0000] {subscription_state.py:171} INFO - Updating subscribed topics to: ('projek_akhir',)
+[2022-12-27T03:25:46.584+0000] {logging_mixin.py:137} INFO - Connected
+[2022-12-27T03:25:46.602+0000] {streaming.py:185} INFO - Stream connected
+[2022-12-27T03:25:51.312+0000] {conn.py:372} INFO - <BrokerConnection node_id=1003 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: connecting to broker:9092 [('172.25.0.4', 9092) IPv4]
+[2022-12-27T03:25:51.330+0000] {conn.py:401} INFO - <BrokerConnection node_id=1003 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: Connection complete.
+[2022-12-27T03:25:51.354+0000] {conn.py:811} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connected> [IPv4 ('172.25.0.4', 9092)]>: Closing connection. 
+[2022-12-27T03:31:47.190+0000] {streaming.py:180} ERROR - Stream connection closed by Twitter
+[2022-12-27T03:31:47.516+0000] {logging_mixin.py:137} INFO - Disconnected
+[2022-12-27T03:31:47.552+0000] {streaming.py:193} INFO - Stream disconnected
+[2022-12-27T03:31:47.679+0000] {conn.py:372} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: connecting to broker:9092 [('172.25.0.4', 9092) IPv4]
+[2022-12-27T03:31:47.874+0000] {conn.py:401} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: Connection complete.
+[2022-12-27T03:31:48.073+0000] {cluster.py:376} INFO - Group coordinator for consumers is (1003, 'broker', 9092, None)
+[2022-12-27T03:31:48.128+0000] {base.py:688} INFO - Discovered coordinator 1003 for group consumers
+[2022-12-27T03:31:48.142+0000] {base.py:735} INFO - Starting new heartbeat thread
+[2022-12-27T03:31:48.150+0000] {consumer.py:342} INFO - Revoking previously assigned partitions () for group consumers
+[2022-12-27T03:31:48.165+0000] {conn.py:372} INFO - <BrokerConnection node_id=1003 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: connecting to broker:9092 [('172.25.0.4', 9092) IPv4]
+[2022-12-27T03:31:48.305+0000] {conn.py:401} INFO - <BrokerConnection node_id=1003 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: Connection complete.
+[2022-12-27T03:31:48.317+0000] {conn.py:811} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connected> [IPv4 ('172.25.0.4', 9092)]>: Closing connection. 
+[2022-12-27T03:31:48.435+0000] {base.py:447} INFO - (Re-)joining group consumers
+[2022-12-27T03:31:48.824+0000] {base.py:516} INFO - Elected group leader -- performing partition assignments using range
+[2022-12-27T03:31:49.058+0000] {base.py:333} INFO - Successfully joined group consumers with generation 4
+[2022-12-27T03:31:49.102+0000] {subscription_state.py:257} INFO - Updated partition assignment: [('projek_akhir', 0)]
+[2022-12-27T03:31:49.125+0000] {consumer.py:239} INFO - Setting newly assigned partitions (('projek_akhir', 0),) for group consumers
+[2022-12-27T03:31:50.560+0000] {logging_mixin.py:137} INFO - <bound method NDFrame.head of Empty DataFrame
+Columns: [tweet_id, text, user_id, created_at, source]
+Index: []>
+[2022-12-27T03:31:50.612+0000] {base.py:742} INFO - Stopping heartbeat thread
+[2022-12-27T03:31:50.623+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-27T03:31:51.372+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=final_project_dag, task_id=extract_test, execution_date=20221227T032515, start_date=20221227T032537, end_date=20221227T033151
+[2022-12-27T03:31:53.745+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-27T03:31:55.871+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

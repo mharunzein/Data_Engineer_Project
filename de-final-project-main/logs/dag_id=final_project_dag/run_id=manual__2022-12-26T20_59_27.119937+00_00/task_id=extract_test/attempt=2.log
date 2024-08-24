@@ -1,0 +1,32 @@
+[2022-12-26T21:04:37.771+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: final_project_dag.extract_test manual__2022-12-26T20:59:27.119937+00:00 [queued]>
+[2022-12-26T21:04:37.793+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: final_project_dag.extract_test manual__2022-12-26T20:59:27.119937+00:00 [queued]>
+[2022-12-26T21:04:37.795+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-26T21:04:37.797+0000] {taskinstance.py:1284} INFO - Starting attempt 2 of 6
+[2022-12-26T21:04:37.799+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-26T21:04:37.827+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): extract_test> on 2022-12-26 20:59:27.119937+00:00
+[2022-12-26T21:04:37.841+0000] {standard_task_runner.py:55} INFO - Started process 500 to run task
+[2022-12-26T21:04:37.850+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'final_project_dag', 'extract_test', 'manual__2022-12-26T20:59:27.119937+00:00', '--job-id', '116', '--raw', '--subdir', 'DAGS_FOLDER/final_project_dag.py', '--cfg-path', '/tmp/tmpg_7dm6qv']
+[2022-12-26T21:04:37.855+0000] {standard_task_runner.py:83} INFO - Job 116: Subtask extract_test
+[2022-12-26T21:04:38.450+0000] {task_command.py:389} INFO - Running <TaskInstance: final_project_dag.extract_test manual__2022-12-26T20:59:27.119937+00:00 [running]> on host 3dc0e72111ec
+[2022-12-26T21:04:38.610+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=kelompok 3
+AIRFLOW_CTX_DAG_ID=final_project_dag
+AIRFLOW_CTX_TASK_ID=extract_test
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-26T20:59:27.119937+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-26T20:59:27.119937+00:00
+[2022-12-26T21:04:38.613+0000] {conn.py:372} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connecting> [IPv4 ('172.25.0.5', 9092)]>: connecting to broker:9092 [('172.25.0.5', 9092) IPv4]
+[2022-12-26T21:04:38.615+0000] {conn.py:1049} INFO - Probing node bootstrap-0 broker version
+[2022-12-26T21:04:38.618+0000] {conn.py:401} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connecting> [IPv4 ('172.25.0.5', 9092)]>: Connection complete.
+[2022-12-26T21:04:38.726+0000] {conn.py:1106} INFO - Broker version identifed as 1.0.0
+[2022-12-26T21:04:38.728+0000] {conn.py:1108} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2022-12-26T21:04:38.732+0000] {subscription_state.py:171} INFO - Updating subscribed topics to: ('projek_akhir',)
+[2022-12-26T21:04:40.522+0000] {streaming.py:217} ERROR - Stream encountered HTTP error: 429
+[2022-12-26T21:04:40.530+0000] {streaming.py:111} ERROR - HTTP error response text: {"title":"ConnectionException","detail":"This stream is currently at the maximum allowed connection limit.","connection_issue":"TooManyConnections","type":"https://api.twitter.com/2/problems/streaming-connection"}
+[2022-12-26T21:05:40.897+0000] {streaming.py:217} ERROR - Stream encountered HTTP error: 429
+[2022-12-26T21:05:40.904+0000] {streaming.py:111} ERROR - HTTP error response text: {"title":"ConnectionException","detail":"This stream is currently at the maximum allowed connection limit.","connection_issue":"TooManyConnections","type":"https://api.twitter.com/2/problems/streaming-connection"}
+[2022-12-26T21:07:41.341+0000] {streaming.py:217} ERROR - Stream encountered HTTP error: 429
+[2022-12-26T21:07:41.347+0000] {streaming.py:111} ERROR - HTTP error response text: {"title":"ConnectionException","detail":"This stream is currently at the maximum allowed connection limit.","connection_issue":"TooManyConnections","type":"https://api.twitter.com/2/problems/streaming-connection"}
+[2022-12-26T21:07:59.733+0000] {conn.py:811} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connected> [IPv4 ('172.25.0.5', 9092)]>: Closing connection. KafkaConnectionError: Socket EVENT_READ without in-flight-requests

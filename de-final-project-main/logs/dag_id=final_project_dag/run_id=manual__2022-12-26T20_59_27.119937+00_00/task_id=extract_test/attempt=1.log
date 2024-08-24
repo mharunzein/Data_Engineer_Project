@@ -1,0 +1,38 @@
+[2022-12-26T20:59:32.047+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: final_project_dag.extract_test manual__2022-12-26T20:59:27.119937+00:00 [queued]>
+[2022-12-26T20:59:32.095+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: final_project_dag.extract_test manual__2022-12-26T20:59:27.119937+00:00 [queued]>
+[2022-12-26T20:59:32.103+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-26T20:59:32.107+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 6
+[2022-12-26T20:59:32.108+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-26T20:59:32.164+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): extract_test> on 2022-12-26 20:59:27.119937+00:00
+[2022-12-26T20:59:32.190+0000] {standard_task_runner.py:55} INFO - Started process 149 to run task
+[2022-12-26T20:59:32.233+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'final_project_dag', 'extract_test', 'manual__2022-12-26T20:59:27.119937+00:00', '--job-id', '112', '--raw', '--subdir', 'DAGS_FOLDER/final_project_dag.py', '--cfg-path', '/tmp/tmpwxjdg4gy']
+[2022-12-26T20:59:32.259+0000] {standard_task_runner.py:83} INFO - Job 112: Subtask extract_test
+[2022-12-26T20:59:34.289+0000] {task_command.py:389} INFO - Running <TaskInstance: final_project_dag.extract_test manual__2022-12-26T20:59:27.119937+00:00 [running]> on host 3dc0e72111ec
+[2022-12-26T20:59:35.055+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=kelompok 3
+AIRFLOW_CTX_DAG_ID=final_project_dag
+AIRFLOW_CTX_TASK_ID=extract_test
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-26T20:59:27.119937+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-26T20:59:27.119937+00:00
+[2022-12-26T20:59:35.075+0000] {conn.py:372} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connecting> [IPv4 ('172.25.0.5', 9092)]>: connecting to broker:9092 [('172.25.0.5', 9092) IPv4]
+[2022-12-26T20:59:35.090+0000] {conn.py:1049} INFO - Probing node bootstrap-0 broker version
+[2022-12-26T20:59:35.095+0000] {conn.py:401} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connecting> [IPv4 ('172.25.0.5', 9092)]>: Connection complete.
+[2022-12-26T20:59:35.776+0000] {conn.py:1106} INFO - Broker version identifed as 1.0.0
+[2022-12-26T20:59:35.788+0000] {conn.py:1108} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2022-12-26T20:59:35.812+0000] {subscription_state.py:171} INFO - Updating subscribed topics to: ('projek_akhir',)
+[2022-12-26T20:59:35.818+0000] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl.py", line 94, in start_etl
+    streaming = IDPrinter(BEARER_TOKEN)
+NameError: name 'IDPrinter' is not defined
+[2022-12-26T20:59:35.912+0000] {taskinstance.py:1327} INFO - Marking task as UP_FOR_RETRY. dag_id=final_project_dag, task_id=extract_test, execution_date=20221226T205927, start_date=20221226T205932, end_date=20221226T205935
+[2022-12-26T20:59:36.029+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 112 for task extract_test (name 'IDPrinter' is not defined; 149)
+[2022-12-26T20:59:36.403+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2022-12-26T20:59:36.624+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,28 @@
+[2022-12-27T03:25:37.878+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: final_project_dag.print_date manual__2022-12-27T03:25:15.923781+00:00 [queued]>
+[2022-12-27T03:25:37.986+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: final_project_dag.print_date manual__2022-12-27T03:25:15.923781+00:00 [queued]>
+[2022-12-27T03:25:37.989+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-27T03:25:37.992+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 6
+[2022-12-27T03:25:37.994+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-27T03:25:38.138+0000] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): print_date> on 2022-12-27 03:25:15.923781+00:00
+[2022-12-27T03:25:38.216+0000] {standard_task_runner.py:55} INFO - Started process 570 to run task
+[2022-12-27T03:25:38.246+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'final_project_dag', 'print_date', 'manual__2022-12-27T03:25:15.923781+00:00', '--job-id', '300', '--raw', '--subdir', 'DAGS_FOLDER/final_project_dag.py', '--cfg-path', '/tmp/tmphnzcwdug']
+[2022-12-27T03:25:38.258+0000] {standard_task_runner.py:83} INFO - Job 300: Subtask print_date
+[2022-12-27T03:25:43.853+0000] {task_command.py:389} INFO - Running <TaskInstance: final_project_dag.print_date manual__2022-12-27T03:25:15.923781+00:00 [running]> on host b40088984618
+[2022-12-27T03:25:45.373+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=kelompok 3
+AIRFLOW_CTX_DAG_ID=final_project_dag
+AIRFLOW_CTX_TASK_ID=print_date
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-27T03:25:15.923781+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-27T03:25:15.923781+00:00
+[2022-12-27T03:25:45.383+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-27T03:25:45.394+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'echo date']
+[2022-12-27T03:25:45.497+0000] {subprocess.py:86} INFO - Output:
+[2022-12-27T03:25:45.527+0000] {subprocess.py:93} INFO - date
+[2022-12-27T03:25:45.537+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-12-27T03:25:45.967+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=final_project_dag, task_id=print_date, execution_date=20221227T032515, start_date=20221227T032537, end_date=20221227T032545
+[2022-12-27T03:25:46.316+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-27T03:25:48.059+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

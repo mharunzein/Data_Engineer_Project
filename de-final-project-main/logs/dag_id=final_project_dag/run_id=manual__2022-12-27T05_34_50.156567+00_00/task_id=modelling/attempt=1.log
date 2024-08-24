@@ -1,0 +1,97 @@
+[2022-12-27T05:36:09.803+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: final_project_dag.modelling manual__2022-12-27T05:34:50.156567+00:00 [queued]>
+[2022-12-27T05:36:09.847+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: final_project_dag.modelling manual__2022-12-27T05:34:50.156567+00:00 [queued]>
+[2022-12-27T05:36:09.850+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-27T05:36:09.852+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 6
+[2022-12-27T05:36:09.855+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-27T05:36:09.904+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): modelling> on 2022-12-27 05:34:50.156567+00:00
+[2022-12-27T05:36:09.967+0000] {standard_task_runner.py:55} INFO - Started process 195 to run task
+[2022-12-27T05:36:09.993+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'final_project_dag', 'modelling', 'manual__2022-12-27T05:34:50.156567+00:00', '--job-id', '397', '--raw', '--subdir', 'DAGS_FOLDER/final_project_dag.py', '--cfg-path', '/tmp/tmpn9g4g1f2']
+[2022-12-27T05:36:10.008+0000] {standard_task_runner.py:83} INFO - Job 397: Subtask modelling
+[2022-12-27T05:36:11.099+0000] {task_command.py:389} INFO - Running <TaskInstance: final_project_dag.modelling manual__2022-12-27T05:34:50.156567+00:00 [running]> on host 7fbb65dd0a64
+[2022-12-27T05:36:12.646+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=kelompok 3
+AIRFLOW_CTX_DAG_ID=final_project_dag
+AIRFLOW_CTX_TASK_ID=modelling
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-27T05:34:50.156567+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-27T05:34:50.156567+00:00
+[2022-12-27T05:36:14.716+0000] {logging_mixin.py:137} INFO -                                                      0  sentiment
+0                                 why stays are so hot       0.25
+1    wts lfb netfli month l shared profile l solo p...       0.00
+2                                           thank you        0.00
+3                     now watching alice in borderland       0.00
+4                                   thank you sejeong        0.00
+..                                                 ...        ...
+619   sandman alice in borderland inside man all re...       0.70
+620          rekomendasi outfit ala korea under k htt        0.00
+621   alice in borderland season is bigger crazier ...       0.10
+622                               hot people stan skz        0.25
+623                  righttttt its one of my fav shows       0.00
+
+[624 rows x 2 columns]
+[2022-12-27T05:36:14.820+0000] {logging_mixin.py:137} INFO -                                                      0  sentiment
+0                                 why stays are so hot        1.0
+1    wts lfb netfli month l shared profile l solo p...        1.0
+2                                           thank you         1.0
+3                     now watching alice in borderland        1.0
+4                                   thank you sejeong         1.0
+..                                                 ...        ...
+619   sandman alice in borderland inside man all re...        1.0
+620          rekomendasi outfit ala korea under k htt         1.0
+621   alice in borderland season is bigger crazier ...        1.0
+622                               hot people stan skz         1.0
+623                  righttttt its one of my fav shows        1.0
+
+[624 rows x 2 columns]
+[2022-12-27T05:36:15.851+0000] {logging_mixin.py:137} INFO -                                                      0  ...                                              clean
+0                                 why stays are so hot  ...                                          stays hot
+1    wts lfb netfli month l shared profile l solo p...  ...  wts lfb netfli month l shared profile l solo p...
+2                                           thank you   ...                                              thank
+3                     now watching alice in borderland  ...                          watching alice borderland
+4                                   thank you sejeong   ...                                      thank sejeong
+..                                                 ...  ...                                                ...
+619   sandman alice in borderland inside man all re...  ...  sandman alice borderland inside man really goo...
+620          rekomendasi outfit ala korea under k htt   ...                 rekomendasi outfit ala korea k htt
+621   alice in borderland season is bigger crazier ...  ...  alice borderland season bigger crazier even de...
+622                               hot people stan skz   ...                                hot people stan skz
+623                  righttttt its one of my fav shows  ...                            righttttt one fav shows
+
+[624 rows x 3 columns]
+[2022-12-27T05:36:16.647+0000] {logging_mixin.py:137} INFO - ================================================
+Evaluasi Hasil Model
+================================================
+[2022-12-27T05:36:16.670+0000] {logging_mixin.py:137} INFO - Dengan Classification Report:
+[2022-12-27T05:36:16.675+0000] {logging_mixin.py:137} INFO -                precision    recall  f1-score   support
+
+         0.0       1.00      0.53      0.70        30
+         1.0       0.92      1.00      0.96       158
+
+    accuracy                           0.93       188
+   macro avg       0.96      0.77      0.83       188
+weighted avg       0.93      0.93      0.92       188
+[2022-12-27T05:36:16.678+0000] {logging_mixin.py:137} INFO - ================================================
+[2022-12-27T05:36:16.680+0000] {logging_mixin.py:137} INFO - 
+Dengan Confusion Matrix:
+[2022-12-27T05:36:16.684+0000] {logging_mixin.py:137} INFO -  [[ 16  14]
+ [  0 158]]
+[2022-12-27T05:36:16.687+0000] {logging_mixin.py:137} INFO - 
+True Positif   :  158
+[2022-12-27T05:36:16.689+0000] {logging_mixin.py:137} INFO - True Negatif   :  16
+[2022-12-27T05:36:16.709+0000] {logging_mixin.py:137} INFO - False Positif  :  14
+[2022-12-27T05:36:16.719+0000] {logging_mixin.py:137} INFO - False Negatif  :  0
+[2022-12-27T05:36:16.724+0000] {logging_mixin.py:137} INFO - 
+================================================
+[2022-12-27T05:36:16.727+0000] {logging_mixin.py:137} INFO - 
+Dengan Beberapa Metrik:
+[2022-12-27T05:36:16.729+0000] {logging_mixin.py:137} INFO - 
+AUC      :  0.9717299578059072
+[2022-12-27T05:36:16.732+0000] {logging_mixin.py:137} INFO - Akurasi  :  0.925531914893617
+[2022-12-27T05:36:16.735+0000] {logging_mixin.py:137} INFO - Presisi  :  0.9186046511627907
+[2022-12-27T05:36:16.737+0000] {logging_mixin.py:137} INFO - Recall   :  1.0
+[2022-12-27T05:36:16.740+0000] {logging_mixin.py:137} INFO - F1-score :  0.9575757575757576
+[2022-12-27T05:36:16.744+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-27T05:36:16.924+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=final_project_dag, task_id=modelling, execution_date=20221227T053450, start_date=20221227T053609, end_date=20221227T053616
+[2022-12-27T05:36:17.302+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-27T05:36:17.804+0000] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check

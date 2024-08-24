@@ -1,0 +1,127 @@
+[2022-12-27T04:36:36.392+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: final_project_dag.extract_test manual__2022-12-27T04:36:24.413497+00:00 [queued]>
+[2022-12-27T04:36:36.448+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: final_project_dag.extract_test manual__2022-12-27T04:36:24.413497+00:00 [queued]>
+[2022-12-27T04:36:36.451+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-27T04:36:36.458+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 6
+[2022-12-27T04:36:36.460+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-27T04:36:36.721+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): extract_test> on 2022-12-27 04:36:24.413497+00:00
+[2022-12-27T04:36:36.767+0000] {standard_task_runner.py:55} INFO - Started process 792 to run task
+[2022-12-27T04:36:36.795+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'final_project_dag', 'extract_test', 'manual__2022-12-27T04:36:24.413497+00:00', '--job-id', '370', '--raw', '--subdir', 'DAGS_FOLDER/final_project_dag.py', '--cfg-path', '/tmp/tmpzn59sqo1']
+[2022-12-27T04:36:36.808+0000] {standard_task_runner.py:83} INFO - Job 370: Subtask extract_test
+[2022-12-27T04:36:37.239+0000] {task_command.py:389} INFO - Running <TaskInstance: final_project_dag.extract_test manual__2022-12-27T04:36:24.413497+00:00 [running]> on host 6026fe33842a
+[2022-12-27T04:36:37.833+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=kelompok 3
+AIRFLOW_CTX_DAG_ID=final_project_dag
+AIRFLOW_CTX_TASK_ID=extract_test
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-27T04:36:24.413497+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-27T04:36:24.413497+00:00
+[2022-12-27T04:36:37.879+0000] {conn.py:372} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: connecting to broker:9092 [('172.25.0.4', 9092) IPv4]
+[2022-12-27T04:36:37.892+0000] {conn.py:1049} INFO - Probing node bootstrap-0 broker version
+[2022-12-27T04:36:37.903+0000] {conn.py:401} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: Connection complete.
+[2022-12-27T04:36:38.044+0000] {conn.py:1106} INFO - Broker version identifed as 1.0.0
+[2022-12-27T04:36:38.046+0000] {conn.py:1108} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2022-12-27T04:36:38.056+0000] {subscription_state.py:171} INFO - Updating subscribed topics to: ('projek_akhir',)
+[2022-12-27T04:36:39.028+0000] {logging_mixin.py:137} INFO - Connected
+[2022-12-27T04:36:39.031+0000] {streaming.py:185} INFO - Stream connected
+[2022-12-27T04:36:56.196+0000] {logging_mixin.py:137} INFO - b'{"text": "@Chruumii white hair guy is so fine."}'
+[2022-12-27T04:36:56.215+0000] {conn.py:372} INFO - <BrokerConnection node_id=1003 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: connecting to broker:9092 [('172.25.0.4', 9092) IPv4]
+[2022-12-27T04:36:56.225+0000] {conn.py:401} INFO - <BrokerConnection node_id=1003 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: Connection complete.
+[2022-12-27T04:36:56.228+0000] {conn.py:811} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connected> [IPv4 ('172.25.0.4', 9092)]>: Closing connection. 
+[2022-12-27T04:36:57.017+0000] {logging_mixin.py:137} INFO - b'{"text": "I\'m actually an alice in borderland promoter"}'
+[2022-12-27T04:37:01.395+0000] {logging_mixin.py:137} INFO - b'{"text": "WE HAVE ANOTHER HAWT AND PRETTY STAYYY OMFG\\ud83d\\ude2d https://t.co/6VRLTOwsws"}'
+[2022-12-27T04:37:07.000+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @hachitski: \\u2013 the women of alice in borderland s2 https://t.co/qFntuAMlgI"}'
+[2022-12-27T04:37:12.063+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @92ACTORJIN: quote this thread with your opinion on alice in borderland characters \\n\\n#AliceInBorderland2 https://t.co/YQM9M1JexL"}'
+[2022-12-27T04:37:19.963+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @yukikun216: Keita Machida also known as Karube in the live action series, Alice in Borderland, announces his marriage today!! \\ud83d\\ude33\\ud83d\\udd25 https:\\u2026"}'
+[2022-12-27T04:37:23.160+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @sehunfan84: alice in borderland spoilers\\n\\narisu aiming his gun at the king of spades after aguni already shot him down  https://t.co/ep\\u2026"}'
+[2022-12-27T04:37:24.353+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @SEUNGlNNIE: Ayaka Miyoshi who plays Ann in alice in borderland (who is also a stay) https://t.co/8oan7ZfT2j"}'
+[2022-12-27T04:37:25.128+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @miiikays: the men of alice in borderland https://t.co/q8a8BUR041"}'
+[2022-12-27T04:37:28.010+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @moviemenfes: \\u26a0\\ufe0f teori/spoiler alice in borderland s2 \\u26a0\\ufe0f\\n\\nthe joker card bener2 bikin \\ud83e\\udd2f\\ud83e\\udd2f\\ud83e\\udd2f mvs https://t.co/86QdEtR6tQ"}'
+[2022-12-27T04:37:28.036+0000] {streaming.py:180} ERROR - Stream connection closed by Twitter
+[2022-12-27T04:37:28.107+0000] {logging_mixin.py:137} INFO - Disconnected
+[2022-12-27T04:37:28.114+0000] {streaming.py:193} INFO - Stream disconnected
+[2022-12-27T04:37:28.125+0000] {conn.py:372} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: connecting to broker:9092 [('172.25.0.4', 9092) IPv4]
+[2022-12-27T04:37:28.238+0000] {conn.py:401} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: Connection complete.
+[2022-12-27T04:37:28.345+0000] {cluster.py:376} INFO - Group coordinator for consumers is (1003, 'broker', 9092, None)
+[2022-12-27T04:37:28.347+0000] {base.py:688} INFO - Discovered coordinator 1003 for group consumers
+[2022-12-27T04:37:28.349+0000] {base.py:735} INFO - Starting new heartbeat thread
+[2022-12-27T04:37:28.353+0000] {consumer.py:342} INFO - Revoking previously assigned partitions () for group consumers
+[2022-12-27T04:37:28.357+0000] {conn.py:372} INFO - <BrokerConnection node_id=1003 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: connecting to broker:9092 [('172.25.0.4', 9092) IPv4]
+[2022-12-27T04:37:28.460+0000] {conn.py:401} INFO - <BrokerConnection node_id=1003 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: Connection complete.
+[2022-12-27T04:37:28.462+0000] {conn.py:811} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connected> [IPv4 ('172.25.0.4', 9092)]>: Closing connection. 
+[2022-12-27T04:37:28.567+0000] {base.py:447} INFO - (Re-)joining group consumers
+[2022-12-27T04:37:28.587+0000] {base.py:516} INFO - Elected group leader -- performing partition assignments using range
+[2022-12-27T04:37:28.645+0000] {base.py:333} INFO - Successfully joined group consumers with generation 5
+[2022-12-27T04:37:28.654+0000] {subscription_state.py:257} INFO - Updated partition assignment: [('projek_akhir', 0)]
+[2022-12-27T04:37:28.657+0000] {consumer.py:239} INFO - Setting newly assigned partitions (('projek_akhir', 0),) for group consumers
+[2022-12-27T04:37:28.863+0000] {logging_mixin.py:137} INFO - {'text': '@SEUNGlNNIE why stays are so hot'}
+[2022-12-27T04:37:29.027+0000] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1901, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column "0" of relation "tweets" does not exist
+LINE 1: INSERT INTO tweets ("0") VALUES (' why stays are so hot')
+                            ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl.py", line 106, in start_etl
+    load(msg.value)
+  File "/opt/airflow/dags/etl.py", line 97, in load
+    data.to_sql('tweets', con=engine, if_exists='append', index=False)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/generic.py", line 2882, in to_sql
+    method=method,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 1770, in to_sql
+    **engine_kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 1350, in insert_records
+    raise err
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 1340, in insert_records
+    table.insert(chunksize=chunksize, method=method)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 967, in insert
+    exec_insert(conn, keys, chunk_iter)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 882, in _execute_insert
+    conn.execute(self.table.insert(), data)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1380, in execute
+    return meth(self, multiparams, params, _EMPTY_EXECUTION_OPTS)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/elements.py", line 335, in _execute_on_connection
+    self, multiparams, params, execution_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1582, in _execute_clauseelement
+    cache_hit=cache_hit,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1944, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2125, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 210, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1901, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column "0" of relation "tweets" does not exist
+LINE 1: INSERT INTO tweets ("0") VALUES (' why stays are so hot')
+                            ^
+
+[SQL: INSERT INTO tweets ("0") VALUES (%(0)s)]
+[parameters: {'0': ' why stays are so hot'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2022-12-27T04:37:29.222+0000] {taskinstance.py:1327} INFO - Marking task as UP_FOR_RETRY. dag_id=final_project_dag, task_id=extract_test, execution_date=20221227T043624, start_date=20221227T043636, end_date=20221227T043729
+[2022-12-27T04:37:29.401+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 370 for task extract_test ((psycopg2.errors.UndefinedColumn) column "0" of relation "tweets" does not exist
+LINE 1: INSERT INTO tweets ("0") VALUES (' why stays are so hot')
+                            ^
+
+[SQL: INSERT INTO tweets ("0") VALUES (%(0)s)]
+[parameters: {'0': ' why stays are so hot'}]
+(Background on this error at: https://sqlalche.me/e/14/f405); 792)
+[2022-12-27T04:37:29.491+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2022-12-27T04:37:29.707+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

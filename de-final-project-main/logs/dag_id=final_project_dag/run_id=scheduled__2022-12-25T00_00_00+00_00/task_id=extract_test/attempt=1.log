@@ -1,0 +1,13 @@
+[2022-12-26T20:16:58.443+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: final_project_dag.extract_test scheduled__2022-12-25T00:00:00+00:00 [queued]>
+[2022-12-26T20:17:03.505+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: final_project_dag.extract_test scheduled__2022-12-25T00:00:00+00:00 [queued]>
+[2022-12-26T20:17:03.623+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-26T20:17:03.677+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 6
+[2022-12-26T20:17:03.736+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-26T20:17:08.236+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): extract_test> on 2022-12-25 00:00:00+00:00
+[2022-12-26T20:17:08.949+0000] {standard_task_runner.py:55} INFO - Started process 143 to run task
+[2022-12-26T20:17:09.179+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'final_project_dag', 'extract_test', 'scheduled__2022-12-25T00:00:00+00:00', '--job-id', '57', '--raw', '--subdir', 'DAGS_FOLDER/final_project_dag.py', '--cfg-path', '/tmp/tmpt7a5ayh1']
+[2022-12-26T20:17:09.543+0000] {standard_task_runner.py:83} INFO - Job 57: Subtask extract_test
+[2022-12-26T20:18:22.866+0000] {task_command.py:389} INFO - Running <TaskInstance: final_project_dag.extract_test scheduled__2022-12-25T00:00:00+00:00 [running]> on host 90c4bc40493a
+[2022-12-26T20:19:15.863+0000] {local_task_job.py:159} INFO - Task exited with return code Negsignal.SIGKILL

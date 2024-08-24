@@ -1,0 +1,100 @@
+[2022-12-27T03:43:42.492+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: final_project_dag.extract_test manual__2022-12-27T03:35:55.540002+00:00 [queued]>
+[2022-12-27T03:43:42.532+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: final_project_dag.extract_test manual__2022-12-27T03:35:55.540002+00:00 [queued]>
+[2022-12-27T03:43:42.534+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-27T03:43:42.535+0000] {taskinstance.py:1284} INFO - Starting attempt 2 of 6
+[2022-12-27T03:43:42.537+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-27T03:43:42.583+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): extract_test> on 2022-12-27 03:35:55.540002+00:00
+[2022-12-27T03:43:42.624+0000] {standard_task_runner.py:55} INFO - Started process 77 to run task
+[2022-12-27T03:43:42.642+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'final_project_dag', 'extract_test', 'manual__2022-12-27T03:35:55.540002+00:00', '--job-id', '310', '--raw', '--subdir', 'DAGS_FOLDER/final_project_dag.py', '--cfg-path', '/tmp/tmp8yk1_hgg']
+[2022-12-27T03:43:42.661+0000] {standard_task_runner.py:83} INFO - Job 310: Subtask extract_test
+[2022-12-27T03:43:46.128+0000] {task_command.py:389} INFO - Running <TaskInstance: final_project_dag.extract_test manual__2022-12-27T03:35:55.540002+00:00 [running]> on host b40088984618
+[2022-12-27T03:43:46.911+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=kelompok 3
+AIRFLOW_CTX_DAG_ID=final_project_dag
+AIRFLOW_CTX_TASK_ID=extract_test
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-27T03:35:55.540002+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-27T03:35:55.540002+00:00
+[2022-12-27T03:43:46.934+0000] {conn.py:372} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: connecting to broker:9092 [('172.25.0.4', 9092) IPv4]
+[2022-12-27T03:43:46.949+0000] {conn.py:1049} INFO - Probing node bootstrap-0 broker version
+[2022-12-27T03:43:46.957+0000] {conn.py:401} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: Connection complete.
+[2022-12-27T03:43:47.428+0000] {conn.py:1106} INFO - Broker version identifed as 1.0.0
+[2022-12-27T03:43:47.441+0000] {conn.py:1108} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2022-12-27T03:43:47.496+0000] {subscription_state.py:171} INFO - Updating subscribed topics to: ('projek_akhir',)
+[2022-12-27T03:43:48.511+0000] {logging_mixin.py:137} INFO - Connected
+[2022-12-27T03:43:48.514+0000] {streaming.py:185} INFO - Stream connected
+[2022-12-27T03:43:53.095+0000] {logging_mixin.py:137} INFO - b'{"text": "morning ! ito mga maganda for me ^__^ \\n\\u2014 1899\\n\\u2014 Alice in Borderland ( s1 &amp; s2 )\\n\\u2014 Emily in Paris \\n\\u2014 Queen\\u2019s Gambit \\n\\u2014 High Water \\n\\u2014 The Babysitter https://t.co/mdWrXh6fQB"}'
+[2022-12-27T03:43:53.168+0000] {conn.py:372} INFO - <BrokerConnection node_id=1003 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: connecting to broker:9092 [('172.25.0.4', 9092) IPv4]
+[2022-12-27T03:43:53.173+0000] {conn.py:401} INFO - <BrokerConnection node_id=1003 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: Connection complete.
+[2022-12-27T03:43:53.178+0000] {conn.py:811} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connected> [IPv4 ('172.25.0.4', 9092)]>: Closing connection. 
+[2022-12-27T03:43:56.029+0000] {logging_mixin.py:137} INFO - b'{"text": "@kompascom Astaghfirullah bapak.. setan bisa2 belajar dr bapak deh kayaknya\\n\\nhttps://t.co/aZGVsns3cE https://t.co/QQqnoQ4dOi"}'
+[2022-12-27T03:43:57.152+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @4hyojoo: i love women so much thank you alice in borderland https://t.co/jWVZSeEntS"}'
+[2022-12-27T03:43:58.376+0000] {logging_mixin.py:137} INFO - b'{"text": "@alexiskold Any good?"}'
+[2022-12-27T03:44:02.053+0000] {logging_mixin.py:137} INFO - b'{"text": "Finally started Season 2 of Alice in Borderland. And I\\u2019m like WTF after just 4 minutes of episode 1\\u2026\\ud83e\\udd2f"}'
+[2022-12-27T03:44:02.072+0000] {logging_mixin.py:137} INFO - b'{"text": "I like the vibess https://t.co/TC781GRZJs"}'
+[2022-12-27T03:44:06.041+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @hachitski: \\u2013 the women of alice in borderland s2 https://t.co/qFntuAMlgI"}'
+[2022-12-27T03:44:07.037+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @ymzkmedia: alice in borderland season 2 edit kento yamazaki tao tsuchiya netflix #AliceInBorderlandS2 #AliceInBorderland2 #AliceInBorde\\u2026"}'
+[2022-12-27T03:44:08.025+0000] {logging_mixin.py:137} INFO - b'{"text": "MY WIFE https://t.co/DsXW5T2EI4"}'
+[2022-12-27T03:44:10.200+0000] {logging_mixin.py:137} INFO - b'{"text": "Alice in borderland 9.5/10 bagus banget https://t.co/2u3ifVBmu5"}'
+[2022-12-27T03:44:14.112+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @netflix: Alice in Borderland Season 2 is bigger, crazier, and even more deadly! Now on Netflix https://t.co/irTET6kBiq"}'
+[2022-12-27T03:44:20.201+0000] {logging_mixin.py:137} INFO - b'{"text": "last series ive watched was Wednesday and one actress there is also a stay now this... SKZ EVERYWHERE ALL AROUND THE WORLD FR"}'
+[2022-12-27T03:44:22.216+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @Gabiirodss: ladies and gentlemen... chishiya, the legend of alice in borderland is back https://t.co/woStrycErM"}'
+[2022-12-27T03:44:22.303+0000] {logging_mixin.py:137} INFO - b'{"text": "made an alice in borderland phone theme https://t.co/U4WPDLGaL3"}'
+[2022-12-27T03:44:27.111+0000] {logging_mixin.py:137} INFO - b'{"text": "ALICE IN BORDERLAND SHOW OF THE CENTURY\\n\\n#AliceInBorderlandS2\\n#AliceInBorderland2\\n\\nhttps://t.co/le8nliC1Cn"}'
+[2022-12-27T03:44:31.065+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @meltborne: \\u201cis alice in borderland better than squid games?\\u201d https://t.co/mDie2bqs7R"}'
+[2022-12-27T03:44:34.085+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @lalisablpk: Hot &amp; cold mixue safe flight fajar home alone denny cagur mark lee thank you crystal snow natasha wilona tahun baru 2023 ar\\u2026"}'
+[2022-12-27T03:44:36.052+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @SEUNGlNNIE: Ayaka Miyoshi who plays Ann in alice in borderland (who is also a stay) https://t.co/8oan7ZfT2j"}'
+[2022-12-27T03:44:37.143+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @SEUNGlNNIE: Ayaka Miyoshi who plays Ann in alice in borderland (who is also a stay) https://t.co/8oan7ZfT2j"}'
+[2022-12-27T03:44:38.056+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @4hyojoo: i love women so much thank you alice in borderland https://t.co/jWVZSeEntS"}'
+[2022-12-27T03:44:41.400+0000] {local_task_job.py:224} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2022-12-27T03:44:41.435+0000] {process_utils.py:133} INFO - Sending Signals.SIGTERM to group 77. PIDs of all processes in the group: [77]
+[2022-12-27T03:44:41.454+0000] {process_utils.py:84} INFO - Sending the signal Signals.SIGTERM to group 77
+[2022-12-27T03:44:41.467+0000] {taskinstance.py:1483} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-12-27T03:44:41.506+0000] {streaming.py:203} ERROR - Stream encountered an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/tweepy/streaming.py", line 91, in _connect
+    chunk_size=self.chunk_size
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 866, in iter_lines
+    chunk_size=chunk_size, decode_unicode=decode_unicode
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 816, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/response.py", line 624, in stream
+    for line in self.read_chunked(amt, decode_content=decode_content):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/response.py", line 828, in read_chunked
+    self._update_chunk_length()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/response.py", line 758, in _update_chunk_length
+    line = self._fp.fp.readline()
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/local/lib/python3.7/ssl.py", line 1071, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/local/lib/python3.7/ssl.py", line 929, in read
+    return self._sslobj.read(len, buffer)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1485, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2022-12-27T03:44:41.577+0000] {logging_mixin.py:137} INFO - Disconnected
+[2022-12-27T03:44:41.584+0000] {streaming.py:193} INFO - Stream disconnected
+[2022-12-27T03:44:41.602+0000] {conn.py:372} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: connecting to broker:9092 [('172.25.0.4', 9092) IPv4]
+[2022-12-27T03:44:41.706+0000] {conn.py:401} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: Connection complete.
+[2022-12-27T03:44:41.934+0000] {cluster.py:376} INFO - Group coordinator for consumers is (1003, 'broker', 9092, None)
+[2022-12-27T03:44:41.938+0000] {base.py:688} INFO - Discovered coordinator 1003 for group consumers
+[2022-12-27T03:44:41.941+0000] {base.py:735} INFO - Starting new heartbeat thread
+[2022-12-27T03:44:41.967+0000] {consumer.py:342} INFO - Revoking previously assigned partitions () for group consumers
+[2022-12-27T03:44:41.976+0000] {conn.py:372} INFO - <BrokerConnection node_id=1003 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: connecting to broker:9092 [('172.25.0.4', 9092) IPv4]
+[2022-12-27T03:44:42.088+0000] {conn.py:401} INFO - <BrokerConnection node_id=1003 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: Connection complete.
+[2022-12-27T03:44:42.090+0000] {conn.py:811} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connected> [IPv4 ('172.25.0.4', 9092)]>: Closing connection. 
+[2022-12-27T03:44:42.195+0000] {base.py:447} INFO - (Re-)joining group consumers
+[2022-12-27T03:44:42.457+0000] {base.py:516} INFO - Elected group leader -- performing partition assignments using range
+[2022-12-27T03:44:42.881+0000] {base.py:333} INFO - Successfully joined group consumers with generation 1
+[2022-12-27T03:44:42.897+0000] {subscription_state.py:257} INFO - Updated partition assignment: [('projek_akhir', 0)]
+[2022-12-27T03:44:42.903+0000] {consumer.py:239} INFO - Setting newly assigned partitions (('projek_akhir', 0),) for group consumers
+[2022-12-27T03:44:44.549+0000] {logging_mixin.py:137} INFO - <bound method NDFrame.head of Empty DataFrame
+Columns: [tweet_id, text, user_id, created_at, source]
+Index: []>
+[2022-12-27T03:44:44.563+0000] {base.py:742} INFO - Stopping heartbeat thread
+[2022-12-27T03:44:44.581+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-27T03:44:44.764+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=final_project_dag, task_id=extract_test, execution_date=20221227T033555, start_date=20221227T034342, end_date=20221227T034444
+[2022-12-27T03:44:45.986+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=77, status='terminated', exitcode=0, started='03:43:42') (77) terminated with exit code 0

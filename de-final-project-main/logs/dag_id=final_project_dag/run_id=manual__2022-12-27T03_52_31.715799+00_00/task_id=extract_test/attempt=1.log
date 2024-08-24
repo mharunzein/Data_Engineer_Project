@@ -1,0 +1,75 @@
+[2022-12-27T03:52:35.821+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: final_project_dag.extract_test manual__2022-12-27T03:52:31.715799+00:00 [queued]>
+[2022-12-27T03:52:35.858+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: final_project_dag.extract_test manual__2022-12-27T03:52:31.715799+00:00 [queued]>
+[2022-12-27T03:52:35.860+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-27T03:52:35.865+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 6
+[2022-12-27T03:52:35.868+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-27T03:52:35.978+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): extract_test> on 2022-12-27 03:52:31.715799+00:00
+[2022-12-27T03:52:36.006+0000] {standard_task_runner.py:55} INFO - Started process 583 to run task
+[2022-12-27T03:52:36.019+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'final_project_dag', 'extract_test', 'manual__2022-12-27T03:52:31.715799+00:00', '--job-id', '314', '--raw', '--subdir', 'DAGS_FOLDER/final_project_dag.py', '--cfg-path', '/tmp/tmpxta64ogy']
+[2022-12-27T03:52:36.027+0000] {standard_task_runner.py:83} INFO - Job 314: Subtask extract_test
+[2022-12-27T03:52:37.552+0000] {task_command.py:389} INFO - Running <TaskInstance: final_project_dag.extract_test manual__2022-12-27T03:52:31.715799+00:00 [running]> on host b40088984618
+[2022-12-27T03:52:37.992+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=kelompok 3
+AIRFLOW_CTX_DAG_ID=final_project_dag
+AIRFLOW_CTX_TASK_ID=extract_test
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-27T03:52:31.715799+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-27T03:52:31.715799+00:00
+[2022-12-27T03:52:38.005+0000] {conn.py:372} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: connecting to broker:9092 [('172.25.0.4', 9092) IPv4]
+[2022-12-27T03:52:38.009+0000] {conn.py:1049} INFO - Probing node bootstrap-0 broker version
+[2022-12-27T03:52:38.017+0000] {conn.py:401} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: Connection complete.
+[2022-12-27T03:52:38.173+0000] {conn.py:1106} INFO - Broker version identifed as 1.0.0
+[2022-12-27T03:52:38.176+0000] {conn.py:1108} INFO - Set configuration api_version=(1, 0, 0) to skip auto check_version requests on startup
+[2022-12-27T03:52:38.191+0000] {subscription_state.py:171} INFO - Updating subscribed topics to: ('projek_akhir',)
+[2022-12-27T03:52:39.110+0000] {logging_mixin.py:137} INFO - Connected
+[2022-12-27T03:52:39.114+0000] {streaming.py:185} INFO - Stream connected
+[2022-12-27T03:52:57.037+0000] {logging_mixin.py:137} INFO - b'{"text": "watching s2 of Alice in borderland right now :) https://t.co/fUsJlRWAIa"}'
+[2022-12-27T03:52:57.067+0000] {conn.py:372} INFO - <BrokerConnection node_id=1003 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: connecting to broker:9092 [('172.25.0.4', 9092) IPv4]
+[2022-12-27T03:52:57.068+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @EIJICHERRY: one thing i am sure about is that i would not survive a single alice in borderland game. they\'d explain the rules to me and\\u2026"}'
+[2022-12-27T03:52:57.077+0000] {conn.py:401} INFO - <BrokerConnection node_id=1003 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: Connection complete.
+[2022-12-27T03:52:57.084+0000] {conn.py:811} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connected> [IPv4 ('172.25.0.4', 9092)]>: Closing connection. 
+[2022-12-27T03:53:02.083+0000] {logging_mixin.py:137} INFO - b'{"text": "i\'m gonna choose to ignore the ending shot &lt;3"}'
+[2022-12-27T03:53:06.013+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @ctingstrange: Very bizzare in Alice In Borderland for a character to use a hand crank 8mm film camera and projector (because electronic\\u2026"}'
+[2022-12-27T03:53:07.039+0000] {logging_mixin.py:137} INFO - b'{"text": "Mkay I\\u2019m about to watch Alice in Borderland S2"}'
+[2022-12-27T03:53:19.013+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @SEUNGlNNIE: Ayaka Miyoshi who plays Ann in alice in borderland (who is also a stay) https://t.co/8oan7ZfT2j"}'
+[2022-12-27T03:53:27.050+0000] {logging_mixin.py:137} INFO - b'{"text": "WDYM ANSWERS WHAT IS GOING ON"}'
+[2022-12-27T03:53:31.070+0000] {logging_mixin.py:137} INFO - b'{"text": "pls @ moots dont talk about alice in borderland cause im still on ep four"}'
+[2022-12-27T03:53:32.318+0000] {logging_mixin.py:137} INFO - b'{"text": "if i get any spoilers i\'ll end your lives myself by shoving yall into the game with niragi ;D"}'
+[2022-12-27T03:53:39.190+0000] {logging_mixin.py:137} INFO - b'{"text": "RT @thurilluwalk: Obsessed with Alice in Borderland 2 atm  and just wanna remind everyone that we got a Mina and Miyoshi Ayaka (Ann) intera\\u2026"}'
+[2022-12-27T03:53:39.204+0000] {streaming.py:180} ERROR - Stream connection closed by Twitter
+[2022-12-27T03:53:39.219+0000] {logging_mixin.py:137} INFO - Disconnected
+[2022-12-27T03:53:39.228+0000] {streaming.py:193} INFO - Stream disconnected
+[2022-12-27T03:53:39.236+0000] {conn.py:372} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: connecting to broker:9092 [('172.25.0.4', 9092) IPv4]
+[2022-12-27T03:53:39.339+0000] {conn.py:401} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: Connection complete.
+[2022-12-27T03:53:39.444+0000] {cluster.py:376} INFO - Group coordinator for consumers is (1003, 'broker', 9092, None)
+[2022-12-27T03:53:39.446+0000] {base.py:688} INFO - Discovered coordinator 1003 for group consumers
+[2022-12-27T03:53:39.448+0000] {base.py:735} INFO - Starting new heartbeat thread
+[2022-12-27T03:53:39.450+0000] {consumer.py:342} INFO - Revoking previously assigned partitions () for group consumers
+[2022-12-27T03:53:39.452+0000] {conn.py:372} INFO - <BrokerConnection node_id=1003 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: connecting to broker:9092 [('172.25.0.4', 9092) IPv4]
+[2022-12-27T03:53:39.556+0000] {conn.py:401} INFO - <BrokerConnection node_id=1003 host=broker:9092 <connecting> [IPv4 ('172.25.0.4', 9092)]>: Connection complete.
+[2022-12-27T03:53:39.557+0000] {conn.py:811} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:9092 <connected> [IPv4 ('172.25.0.4', 9092)]>: Closing connection. 
+[2022-12-27T03:53:39.663+0000] {base.py:447} INFO - (Re-)joining group consumers
+[2022-12-27T03:53:39.677+0000] {base.py:516} INFO - Elected group leader -- performing partition assignments using range
+[2022-12-27T03:53:39.699+0000] {base.py:333} INFO - Successfully joined group consumers with generation 1
+[2022-12-27T03:53:39.703+0000] {subscription_state.py:257} INFO - Updated partition assignment: [('projek_akhir', 0)]
+[2022-12-27T03:53:39.705+0000] {consumer.py:239} INFO - Setting newly assigned partitions (('projek_akhir', 0),) for group consumers
+[2022-12-27T03:53:39.953+0000] {logging_mixin.py:137} INFO - {"text": "@SEUNGlNNIE why stays are so hot"}
+[2022-12-27T03:53:39.958+0000] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl.py", line 102, in start_etl
+    load(msg.value)
+  File "/opt/airflow/dags/etl.py", line 90, in load
+    temp = json.loads(msg)
+  File "/usr/local/lib/python3.7/json/__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not ConsumerRecord
+[2022-12-27T03:53:40.038+0000] {taskinstance.py:1327} INFO - Marking task as UP_FOR_RETRY. dag_id=final_project_dag, task_id=extract_test, execution_date=20221227T035231, start_date=20221227T035235, end_date=20221227T035340
+[2022-12-27T03:53:40.117+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 314 for task extract_test (the JSON object must be str, bytes or bytearray, not ConsumerRecord; 583)
+[2022-12-27T03:53:40.263+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2022-12-27T03:53:42.414+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check
